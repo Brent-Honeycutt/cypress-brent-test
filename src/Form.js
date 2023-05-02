@@ -12,10 +12,7 @@ function Form() {
 
   return (
     <div>
-      <h1 data-cy="main-heading">Brent Portfolio Cypress Example</h1>
-      <p data-cy="intro-paragraph">
-        This is a simple React web page for testing via Cypress.
-      </p>
+      <h2>Registration Form (Outputs to Console)</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
