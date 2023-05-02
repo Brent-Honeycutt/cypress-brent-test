@@ -1,0 +1,57 @@
+import React, { useState } from 'react';
+
+function Form() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`Name: ${name}\nEmail: ${email}\nPassword: ${password}`);
+  };
+
+  return (
+    <div>
+      <h1 data-cy="main-heading">Brent Portfolio Cypress Example</h1>
+      <p data-cy="intro-paragraph">
+        This is a simple React web page for testing via Cypress.
+      </p>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            data-cy="name-input"
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            data-cy="email-input"
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            data-cy="password-input"
+          />
+        </div>
+        <button type="submit" data-cy="register-button">Register</button>
+      </form>
+    </div>
+  );
+  
+}
+
+export default Form;
