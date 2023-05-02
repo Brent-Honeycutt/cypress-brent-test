@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# This project is a test app to demonstrate a functional understanding of Cypress
+
+I will be using this as a testing and experimentation project, and will be adding to it over time.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
