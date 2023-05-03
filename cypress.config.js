@@ -5,4 +5,7 @@ module.exports = {
       // implement node event listeners here
     },
   },
+  env: {
+    CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+  }
 };
