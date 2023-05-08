@@ -1,3 +1,4 @@
+import './App.css';
 import Form from './Form';
 import Calculator from './Calculator';
 
