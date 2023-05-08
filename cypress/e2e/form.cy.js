@@ -10,6 +10,8 @@ describe('Registration form', () => {
       }
     });
   })
+  //This test is creating a stub of the log after submission, as the site only logs the values. 
+  //This could easily be converted to confirming the values returned by an endpoint.
   it('allows a user to register with valid credentials and logs the submitted data', () => {
     
     // Enter valid registration details
