@@ -43,7 +43,7 @@ describe('Calculator', () => {
     // Select the "+" button to add the numbers
     cy.get('button').contains('+').click();
 
-    // Verify that the submitted data is displayed in the console log
+    // Verify that the result is correct
     cy.get('[data-cy="calculator-result"]').should('contain', 'Result: 9');
   });
 
@@ -58,7 +58,7 @@ describe('Calculator', () => {
     // Select the "+" button to add the numbers
     cy.get('button').contains('-').click();
 
-    // Verify that the submitted data is displayed in the console log
+    // Verify that the result is correct
     cy.get('[data-cy="calculator-result"]').should('contain', 'Result: 3');
   });
 
@@ -73,7 +73,7 @@ describe('Calculator', () => {
     // Select the "+" button to add the numbers
     cy.get('button').contains('*').click();
 
-    // Verify that the submitted data is displayed in the console log
+    // Verify that the result is correct
     cy.get('[data-cy="calculator-result"]').should('contain', 'Result: 70');
   });
 
@@ -88,7 +88,7 @@ describe('Calculator', () => {
     // Select the "+" button to add the numbers
     cy.get('button').contains('/').click();
 
-    // Verify that the submitted data is displayed in the console log
+    // Verify that the result is correct
     cy.get('[data-cy="calculator-result"]').should('contain', 'Result: 3086');
   });
 });
