@@ -18,7 +18,7 @@ describe('Calculator', () => {
 
     //Verify that "1234567890" in the value of both fields
     cy.get('#num1').should('have.value', '1234567890')
-    cy.get('#num1').should("have.value", '1234567890')
+    cy.get('#num2').should("have.value", '1234567890')
   });
 
   it('can NOT input letters, symbols, or emoji in the fields', () => {
@@ -29,7 +29,7 @@ describe('Calculator', () => {
 
     //Verify both fields remain blank, disallowing the characters
     cy.get('#num1').should('have.value', '')
-    cy.get('#num1').should('have.value', '')
+    cy.get('#num2').should('have.value', '')
   })
  
   it('performs addition correctly', () => {
